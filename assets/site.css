@@ -83,8 +83,8 @@
     /* Services */
     #leistungen{padding-top:115px}
     .services-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:17px}
-    .service-card{position:relative;overflow:hidden;min-height:258px;background:#fff;border:1px solid var(--line);border-radius:20px;padding:29px;transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease}
-    .service-card:hover{transform:translateY(-5px);border-color:#bae6f7;box-shadow:var(--shadow)}
+    .service-card{position:relative;overflow:hidden;min-height:258px;background:linear-gradient(180deg,#f1f8fc 0%,#e9f4fb 100%);border:1px solid #cfe4ef;border-radius:20px;padding:29px;transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease,background .25s ease}
+    .service-card:hover{transform:translateY(-5px);border-color:#8ed8f2;box-shadow:var(--shadow);background:linear-gradient(180deg,#eef7fc 0%,#e3f1fa 100%)}
     .service-icon{width:53px;height:53px;display:grid;place-items:center;border:1px solid #dceff8;border-radius:15px;background:#ecf8fd;color:#197aa9;margin-bottom:25px}
     .service-card h3{font-size:19px;font-weight:780;letter-spacing:-.038em;margin:0 0 11px}
     .service-card p{margin:0;color:var(--muted);font-size:13px;line-height:1.75}
