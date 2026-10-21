@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#071424"><meta name="description" content="SmartProtect: Smart Home für mehr Sicherheit im Alltag. Smarte Sensoren, Alltagshilfen und Benachrichtigungen für Familien, ältere Menschen und Angehörige.">
+<title>SmartProtect | Smart Home &amp; Sicherheitstechnik</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='17' fill='%23091b30'/%3E%3Cpath d='M32 10l19 8v12c0 15-8 24-19 29C21 54 13 45 13 30V18l19-8z' fill='none' stroke='%2376d5f6' stroke-width='5'/%3E%3Cpath d='M22 32l7 7 15-16' stroke='white' fill='none' stroke-width='5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/site.css"></head><body><svg aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden" xmlns="http://www.w3.org/2000/svg">
+<symbol id="shield" viewbox="0 0 24 24"><path d="m12 2 8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6l8-4Z"></path><path d="m8.4 11.9 2.4 2.5 4.8-5"></path></symbol>
+<symbol id="arrow" viewbox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"></path></symbol>
+<symbol id="up-right" viewbox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"></path></symbol>
+<symbol id="check" viewbox="0 0 24 24"><path d="m5 12 4.5 4.5L19 7"></path></symbol>
+<symbol id="planning" viewbox="0 0 24 24"><rect height="18" rx="2" width="16" x="4" y="3"></rect><path d="M8 8h8M8 12h8M8 16h4"></path></symbol>
+<symbol id="tools" viewbox="0 0 24 24"><path d="M14.4 6.6a5 5 0 0 0-6.8 6.8L3 18l3 3 4.6-4.6a5 5 0 0 0 6.8-6.8L14 13l-3-3 3.4-3.4Z"></path></symbol>
+<symbol id="headset" viewbox="0 0 24 24"><path d="M4 13V11a8 8 0 0 1 16 0v2M4 13h3v7H5a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2Zm16 0h-3v7h2a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2Z"></path></symbol>
+<symbol id="camera" viewbox="0 0 24 24"><rect height="12" rx="2" width="12" x="3" y="6"></rect><path d="m15 10 6-4v12l-6-4"></path></symbol>
+<symbol id="bell" viewbox="0 0 24 24"><path d="M5 17h14l-2-3V9a5 5 0 0 0-10 0v5l-2 3Zm5 3h4"></path></symbol>
+<symbol id="lock" viewbox="0 0 24 24"><rect height="11" rx="2" width="14" x="5" y="10"></rect><path d="M8 10V7a4 4 0 0 1 8 0v3m-4 5v2"></path></symbol>
+<symbol id="door" viewbox="0 0 24 24"><path d="M5 21V4a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v17H5Z"></path><path d="M5 21h14M15 12h.01"></path></symbol>
+<symbol id="blinds" viewbox="0 0 24 24"><path d="M4 5h16M4 9h16M4 13h16M4 17h16M7 3v17m10-17v17"></path></symbol>
+<symbol id="bulb" viewbox="0 0 24 24"><path d="M9 18h6m-5 3h4m-6-6a7 7 0 1 1 8 0l-1 3H9l-1-3Z"></path></symbol>
+<symbol id="wifi" viewbox="0 0 24 24"><path d="M2 9a15 15 0 0 1 20 0M5 12.5a10 10 0 0 1 14 0M9 16a5 5 0 0 1 6 0"></path><circle cx="12" cy="20" fill="currentColor" r="1" stroke="none"></circle></symbol>
+<symbol id="mic" viewbox="0 0 24 24"><rect height="13" rx="3" width="6" x="9" y="2"></rect><path d="M5 11a7 7 0 0 0 14 0M12 18v4m-4 0h8"></path></symbol>
+<symbol id="house" viewbox="0 0 24 24"><path d="m2 11 10-8 10 8M5 10v11h14V10M9 21v-7h6v7"></path></symbol>
+<symbol id="sun" viewbox="0 0 24 24"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2m0 16v2M4.9 4.9l1.4 1.4m11.4 11.4 1.4 1.4M2 12h2m16 0h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></symbol>
+<symbol id="phone" viewbox="0 0 24 24"><path d="M5 3h4l2 5-2.5 2.3a17 17 0 0 0 5.2 5.2L16 13l5 2v4a2 2 0 0 1-2 2C9 21 3 15 3 5a2 2 0 0 1 2-2Z"></path></symbol>
+<symbol id="mail" viewbox="0 0 24 24"><rect height="14" rx="2" width="20" x="2" y="5"></rect><path d="m3 7 9 7 9-7"></path></symbol>
+<symbol id="message" viewbox="0 0 24 24"><path d="M20 11.5a8.5 8.5 0 0 1-12.7 7.4L3 20l1.1-4.3A8.5 8.5 0 1 1 20 11.5Z"></path><path d="m9 9 2 2 4-4"></path></symbol>
+<symbol id="solar" viewbox="0 0 24 24"><path d="M4 9h16l2 10H2L4 9Zm4 0-1 10m9-10 1 10M3 14h18M12 3v3m-7-1 2 2m10 0 2-2"></path></symbol>
+<symbol id="droplet" viewbox="0 0 24 24"><path d="M12 2S5 10 5 15a7 7 0 0 0 14 0c0-5-7-13-7-13Z"></path></symbol>
+<symbol id="waves" viewbox="0 0 24 24"><path d="M2 9q2.5-3 5 0t5 0t5 0t5 0M2 15q2.5-3 5 0t5 0t5 0t5 0"></path></symbol>
+<symbol id="menu" viewbox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"></path></symbol>
+<symbol id="close" viewbox="0 0 24 24"><path d="M5 5 19 19M19 5 5 19"></path></symbol>
+<symbol id="compass" viewbox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><path d="m16 8-2.5 5.5L8 16l2.5-5.5L16 8Z"></path></symbol>
+
+<symbol id="heart-hand" viewBox="0 0 24 24"><path d="M12 21s-8.5-4.8-8.5-10.6a4.6 4.6 0 0 1 8.5-2.3 4.6 4.6 0 0 1 8.5 2.3C20.5 16.2 12 21 12 21Z"></path><path d="M8.2 12h2.2l1.1-2.1 1.8 4.4 1.1-2.3h2"></path></symbol>
+<symbol id="users-circle" viewBox="0 0 24 24"><path d="M16 20v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2m17 0v-2a4 4 0 0 0-3-3.9M15 3.2a4 4 0 0 1 0 7.6"></path><circle cx="9" cy="7" r="4"></circle></symbol>
+<symbol id="spark" viewBox="0 0 24 24"><path d="m12 2 2.2 7.8L22 12l-7.8 2.2L12 22l-2.2-7.8L2 12l7.8-2.2L12 2Z"></path></symbol>
+<symbol id="activity" viewBox="0 0 24 24"><path d="M2 12h5l3-7 4 14 3-7h5"></path></symbol>
+<symbol id="smartphone" viewBox="0 0 24 24"><rect x="6" y="2" width="12" height="20" rx="2"></rect><path d="M11 18h2"></path></symbol>
+<symbol id="clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></symbol>
+</svg>
+<a href="#main" class="skip">Zum Inhalt springen</a>
+<header class="site-header" id="top"><div class="container header-inner">
+<a class="brand" href="index.html" aria-label="SmartProtect — zur Startseite"><span class="brand-mark"><svg class="icon"><use href="#shield"/></svg></span><span class="brand-name">smart<span>protect.</span></span></a>
+<nav class="desktop-nav" aria-label="Hauptnavigation"><a href="index.html" class="active" aria-current="page">Startseite</a><a href="leistungen.html">Leistungen & Demo</a><a href="kontakt.html">Über uns & Kontakt</a></nav>
+<a href="kontakt.html#kontakt" class="btn btn-primary header-cta">Projekt anfragen <svg class="icon"><use href="#up-right"/></svg></a>
+<button class="menu-btn" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="mobile-nav" id="menu-toggle"><svg class="icon"><use href="#menu"/></svg></button>
+</div>
+<nav class="mobile-nav" aria-label="Mobile Navigation" id="mobile-nav" hidden><a href="index.html" class="active" aria-current="page">Startseite</a><a href="leistungen.html">Leistungen & Demo</a><a href="kontakt.html">Über uns & Kontakt</a><a href="kontakt.html#kontakt" class="mobile-cta">Projekt anfragen ↗</a></nav></header><main id="main"><section aria-labelledby="hero-title" class="hero">
+<div class="container hero-grid">
+<div>
+<span class="hero-kicker"><span class="signal"></span> Smart Home &amp; Sicherheitstechnik</span>
+<h1 id="hero-title">Intelligent leben.<span>Sicher fühlen.</span></h1>
+<p class="hero-copy">Ein Smart Home kann mehr als Licht steuern: Es hilft, Gefahren früh zu erkennen, den Alltag zu erleichtern und bei passenden Systemen auch Angehörige zu informieren. Für jedes Alter.</p>
+<div class="hero-actions"><a class="btn btn-primary" href="kontakt.html#kontakt">Unverbindlich anfragen <svg class="icon"><use href="#arrow"></use></svg></a><a class="btn btn-outline" href="leistungen.html#anwendungsbeispiel">Smart Home entdecken <svg class="icon"><use href="#up-right"></use></svg></a></div>
+<div class="hero-points"><span><svg class="icon"><use href="#check"></use></svg> Für die ganze Familie</span><span><svg class="icon"><use href="#check"></use></svg> Mehr Selbstständigkeit</span><span><svg class="icon"><use href="#check"></use></svg> Persönliche Betreuung</span></div>
+</div>
+<div class="hero-art">
+<div class="photo-shell">
+<img alt="Modernes Wohnhaus mit Pool als Beispiel für ein Smart Home" fetchpriority="high" onerror="this.onerror=null;this.src='assets/smart-home-house.svg'" src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&amp;fit=crop&amp;w=1200&amp;q=82"/>
+<div class="photo-note"><div><small>Wohnen. Vernetzt. Geschützt.</small><strong>Technik, die mitdenkt.</strong></div><svg class="icon icon-lg" style="color:#b6edff"><use href="#up-right"></use></svg></div>
+</div>
+<div class="glass-badge"><span class="badge-icon"><svg class="icon"><use href="#shield"></use></svg></span><div><span>Unser Fokus</span><strong>Sicherheit + Komfort</strong></div></div>
+<div class="art-edge"></div>
+</div>
+</div>
+</section><div aria-label="Unser Serviceversprechen" class="container trust-wrap">
+<div class="trust-strip reveal">
+<div class="trust-item"><span class="trust-icon"><svg class="icon icon-lg"><use href="#planning"></use></svg></span><div><strong>Durchdacht geplant</strong><p>Passend zu deinem Zuhause</p></div></div>
+<div class="trust-item"><span class="trust-icon"><svg class="icon icon-lg"><use href="#tools"></use></svg></span><div><strong>Sauber umgesetzt</strong><p>Professionell &amp; zuverlässig</p></div></div>
+<div class="trust-item"><span class="trust-icon"><svg class="icon icon-lg"><use href="#headset"></use></svg></span><div><strong>Langfristig begleitet</strong><p>Von Installation bis Wartung</p></div></div>
+</div>
+</div>
+<section class="section everyday-section" id="alltag" aria-labelledby="everyday-title">
+  <div class="container">
+    <div class="everyday-intro reveal">
+      <span class="eyebrow">Warum Smart Home?</span>
+      <h2 id="everyday-title">Nicht nur intelligent.<br><span>Sondern wirklich hilfreich.</span></h2>
+      <p>Die beste Technik merkst du nicht an einer App – sondern daran, dass dein Alltag leichter wird und du dir weniger Sorgen machen musst.</p>
+    </div>
+    <div class="everyday-grid">
+      <article class="everyday-card everyday-card-featured reveal">
+        <div class="everyday-card-top"><span class="everyday-icon"><svg class="icon icon-lg"><use href="#heart-hand"/></svg></span><span class="everyday-index">01 / FÜRSORGE</span></div>
+        <div class="everyday-card-text"><span class="everyday-tag">Für ältere Menschen &amp; Angehörige</span><h3>Selbstständig wohnen. Nicht allein gelassen werden.</h3><p>Geeignete Sensoren oder Wearables können mögliche Stürze melden. Auf Wunsch lassen sich zuvor festgelegte Angehörige benachrichtigen – damit Hilfe organisiert werden kann.</p></div>
+        <a href="#senioren" class="everyday-link">Mehr zur Alltagssicherheit <svg class="icon"><use href="#arrow"/></svg></a>
+      </article>
+      <article class="everyday-card reveal">
+        <div class="everyday-card-top"><span class="everyday-icon"><svg class="icon icon-lg"><use href="#shield"/></svg></span><span class="everyday-index">02 / SCHUTZ</span></div>
+        <div class="everyday-card-text"><span class="everyday-tag">Für Familien</span><h3>Wissen, wenn zu Hause etwas passiert.</h3><p>Rauch-, Wasser- und Türsensoren können frühzeitig warnen – auch wenn du gerade nicht im Haus bist.</p></div>
+        <a href="leistungen.html#leistungen" class="everyday-link">Sicherheitslösungen ansehen <svg class="icon"><use href="#arrow"/></svg></a>
+      </article>
+      <article class="everyday-card reveal">
+        <div class="everyday-card-top"><span class="everyday-icon"><svg class="icon icon-lg"><use href="#spark"/></svg></span><span class="everyday-index">03 / ALLTAG</span></div>
+        <div class="everyday-card-text"><span class="everyday-tag">Für jeden Tag</span><h3>Mehr Komfort, weniger Handgriffe.</h3><p>Licht, Rollläden und Routinen arbeiten automatisch zusammen – abgestimmt auf deine Gewohnheiten.</p></div>
+        <a href="leistungen.html#leistungen" class="everyday-link">Smart-Home-Lösungen entdecken <svg class="icon"><use href="#arrow"/></svg></a>
+      </article>
+    </div>
+  </div>
+</section>
+<section class="care-section" id="senioren" aria-labelledby="care-title">
+  <div class="container care-grid">
+    <div class="care-copy reveal">
+      <span class="eyebrow">Sicherheit für jede Lebensphase</span>
+      <h2 id="care-title">Ein gutes Gefühl.<br>Auch wenn man <em>nicht vor Ort</em> ist.</h2>
+      <p class="care-lead">Gerade wenn Eltern oder Großeltern allein leben, kann smarte Alltagssicherheit entlasten. Das Ziel: möglichst lange selbstständig zu Hause wohnen – mit Unterstützung, die nur dann eingreift, wenn sie gebraucht wird.</p>
+      <div class="care-benefits">
+        <div class="care-benefit"><span><svg class="icon"><use href="#activity"/></svg></span><div><h3>Mögliche Stürze erkennen</h3><p>Mit dafür vorgesehenen Sturzsensoren oder kompatiblen Wearables.</p></div></div>
+        <div class="care-benefit"><span><svg class="icon"><use href="#users-circle"/></svg></span><div><h3>Angehörige benachrichtigen</h3><p>Hinweise an ausgewählte Vertrauenspersonen – mit Einwilligung und passenden Einstellungen.</p></div></div>
+        <div class="care-benefit"><span><svg class="icon"><use href="#bulb"/></svg></span><div><h3>Den Alltag sicherer gestalten</h3><p>Zum Beispiel durch automatisches Orientierungslicht nachts und vernetzte Warnmelder.</p></div></div>
+      </div>
+      <a class="btn btn-dark" href="kontakt.html?thema=alltagssicherheit#kontakt">Zur Beratung für Angehörige <svg class="icon"><use href="#arrow"/></svg></a>
+    </div>
+    <div class="care-visual reveal" aria-label="Schematisches Beispiel für einen Hinweis bei möglichem Sturz">
+      <div class="care-backdrop-orb" aria-hidden="true"></div>
+      <div class="care-visual-head"><span class="care-small-mark"><svg class="icon"><use href="#shield"/></svg></span><span>SMARTPROTECT / ALLTAGSSICHERHEIT</span><span class="care-label-demo">BEISPIEL</span></div>
+      <div class="care-scenario"><span class="care-scenario-icon"><svg class="icon icon-lg"><use href="#activity"/></svg></span><div><span class="care-scenario-kicker">Hinweis auf dem Smartphone</span><strong>Möglicher Sturz erkannt</strong><small>Wohnbereich · Ereignis überprüfen</small></div><span class="care-scenario-dot" aria-hidden="true"></span></div>
+      <div class="care-flow" aria-label="Beispielablauf einer Benachrichtigung">
+        <div class="care-flow-title">SO KANN EIN ALARMPFAD AUSSEHEN</div>
+        <div class="care-flow-step"><span class="care-flow-step-icon"><svg class="icon"><use href="#activity"/></svg></span><div><strong>1. Ereignis erkannt</strong><span>Ein geeigneter Sensor meldet eine Auffälligkeit.</span></div><span class="care-flow-check"><svg class="icon"><use href="#check"/></svg></span></div>
+        <div class="care-flow-step"><span class="care-flow-step-icon"><svg class="icon"><use href="#smartphone"/></svg></span><div><strong>2. Meldung versendet</strong><span>Das System löst eine konfigurierte Nachricht aus.</span></div><span class="care-flow-check"><svg class="icon"><use href="#check"/></svg></span></div>
+        <div class="care-flow-step"><span class="care-flow-step-icon"><svg class="icon"><use href="#users-circle"/></svg></span><div><strong>3. Angehörige informiert</strong><span>Festgelegte Kontakte können nachsehen und reagieren.</span></div><span class="care-flow-check"><svg class="icon"><use href="#check"/></svg></span></div>
+      </div>
+      <p class="care-disclaimer"><svg class="icon"><use href="#shield"/></svg><span>Illustrativer Ablauf. Sturzerkennung und Benachrichtigungen sind von kompatibler Technik und Konfiguration abhängig; nicht jeder Sturz wird erkannt. Kein Ersatz für einen medizinischen Hausnotruf.</span></p>
+    </div>
+  </div>
+</section>
+<section class="section home-services" aria-labelledby="home-service-title"><div class="container"><div class="section-head reveal"><div><span class="eyebrow">Unsere Lösungen</span><h2 id="home-service-title">Ein Zuhause.<br>Viele Möglichkeiten.</h2></div><p>Sicherheit und Komfort in einem durchdachten System – entdecke, was SmartProtect für dein Zuhause leisten kann.</p></div>
+<div class="home-cards">
+<a class="home-card reveal" href="leistungen.html#leistungen"><span class="service-icon"><svg class="icon icon-lg"><use href="#camera"/></svg></span><strong>Kameraüberwachung</strong><p>Dein Grundstück im Blick – mit moderner Überwachung, Nachtsicht und smarten Benachrichtigungen.</p><span class="panel-link">Mehr erfahren <svg class="icon"><use href="#arrow"/></svg></span></a>
+<a class="home-card reveal" href="leistungen.html#leistungen"><span class="service-icon"><svg class="icon icon-lg"><use href="#shield"/></svg></span><strong>Intelligenter Einbruchschutz</strong><p>Sensoren, Alarmfunktionen und smarte Sicherheitsroutinen für ein sicheres Gefühl.</p><span class="panel-link">Mehr erfahren <svg class="icon"><use href="#arrow"/></svg></span></a>
+<a class="home-card reveal" href="leistungen.html#leistungen"><span class="service-icon"><svg class="icon icon-lg"><use href="#house"/></svg></span><strong>Intelligente Beleuchtung</strong><p>Smarte Lichtsteuerung mit Szenen, Zeitplänen und automatischen Abläufen für mehr Komfort und Sicherheit.</p><span class="panel-link">Mehr erfahren <svg class="icon"><use href="#arrow"/></svg></span></a>
+</div><div class="section-action"><a class="btn btn-dark" href="leistungen.html">Alle Leistungen entdecken <svg class="icon"><use href="#arrow"/></svg></a></div></div></section><section class="home-preview" aria-labelledby="home-preview-title"><div class="container home-preview-grid"><div class="reveal"><span class="eyebrow">Interaktive Entdeckertour</span><h2 id="home-preview-title">Erlebe, wie ein Smart Home zusammenarbeitet.</h2><p>Vom Dach mit PV-Anlage bis zu Pool, Garten und Sicherheitskamera: Unser interaktives Haus zeigt dir sieben smarte Anwendungen – einfach anklicken und entdecken.</p><a class="btn btn-dark" href="leistungen.html#anwendungsbeispiel">Interaktives Haus öffnen <svg class="icon"><use href="#arrow"/></svg></a></div><a class="home-preview-art reveal" href="leistungen.html#anwendungsbeispiel" aria-label="Interaktives Hausbeispiel öffnen"><img src="assets/smart-home-house.svg" alt="Illustriertes Smart Home mit PV-Anlage und Pool" loading="lazy"></a></div></section><section class="home-cta"><div class="container home-cta-inner"><div><h2>Du hast eine Idee? Wir machen sie smart.</h2><p>Erzähl uns von deinem Projekt – persönlich und unverbindlich.</p></div><a class="btn btn-primary" href="kontakt.html#kontakt">Jetzt Projekt anfragen <svg class="icon"><use href="#arrow"/></svg></a></div></section></main><footer class="footer"><div class="container"><div class="footer-top"><a class="brand" href="index.html" aria-label="SmartProtect — Startseite"><span class="brand-mark"><svg class="icon"><use href="#shield"/></svg></span><span class="brand-name">smart<span>protect.</span></span></a><nav class="footer-nav" aria-label="Footer-Navigation"><a href="index.html" aria-current="page">Startseite</a><a href="leistungen.html">Leistungen &amp; Demo</a><a href="kontakt.html">Über uns &amp; Kontakt</a><button type="button" data-dialog="impressum">Impressum</button><button type="button" data-dialog="datenschutz">Datenschutz</button></nav></div><div class="footer-bottom"><span>© <span id="copyright-year">2026</span> SmartProtect. Intelligente Sicherheit &amp; Smart Home.</span><a href="#top" class="backtop">Nach oben <svg class="icon"><use href="#arrow"/></svg></a></div></div></footer>
+<dialog class="legal-dialog" id="legal-dialog" aria-labelledby="legal-title"><div class="legal-inner"><div class="legal-top"><h2 id="legal-title">Impressum</h2><button class="dialog-close" type="button" id="dialog-close" aria-label="Fenster schließen"><svg class="icon"><use href="#close"/></svg></button></div><div id="legal-content"></div></div></dialog><script src="assets/site.js" defer></script></body></html>

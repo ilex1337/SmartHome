@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 980" role="img" aria-label="Illustration eines modernen Smart Homes mit Pool, Solaranlage, Beleuchtung und Garten">
+ <defs>
+  <linearGradient id="sky" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#091d32"/><stop offset=".55" stop-color="#234661"/><stop offset="1" stop-color="#728995"/></linearGradient>
+  <linearGradient id="facade" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e5edf1"/><stop offset=".55" stop-color="#aebec7"/><stop offset="1" stop-color="#697f8d"/></linearGradient>
+  <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#112d49"/><stop offset=".5" stop-color="#356c85"/><stop offset="1" stop-color="#0e233d"/></linearGradient>
+  <linearGradient id="pool" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#70e0ec"/><stop offset=".45" stop-color="#1d93b8"/><stop offset="1" stop-color="#0b537d"/></linearGradient>
+  <linearGradient id="soil" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#325e5e"/><stop offset="1" stop-color="#122a37"/></linearGradient>
+  <radialGradient id="glow"><stop stop-color="#fce4a5" stop-opacity=".75"/><stop offset="1" stop-color="#fce4a5" stop-opacity="0"/></radialGradient>
+  <pattern id="lines" width="48" height="48" patternUnits="userSpaceOnUse"><path d="M48 0H0V48" fill="none" stroke="#fff" stroke-opacity=".055"/></pattern>
+  <pattern id="poolLine" width="105" height="34" patternUnits="userSpaceOnUse"><path d="M0 16 Q27 6 53 16 T105 16" fill="none" stroke="#a9f4fb" stroke-width="2" stroke-opacity=".33"/></pattern>
+  <filter id="shadow"><feGaussianBlur stdDeviation="23"/></filter>
+  <filter id="lights"><feGaussianBlur stdDeviation="12"/></filter>
+ </defs>
+ <rect width="1600" height="980" fill="url(#sky)"/>
+ <circle cx="1250" cy="180" r="260" fill="#68bac3" opacity=".10"/>
+ <circle cx="110" cy="150" r="250" fill="#2a91b6" opacity=".10"/>
+ <path d="M0 640C275 585 400 640 622 604S1210 568 1600 630V980H0Z" fill="#15394b"/>
+ <path d="M0 720C360 654 585 739 852 680S1360 667 1600 700V980H0Z" fill="url(#soil)"/>
+ <path d="M0 0H1600V980H0Z" fill="url(#lines)"/>
+ <!-- distant vegetation -->
+ <g fill="#0e2a3c" opacity=".85"><path d="M30 690C65 588 79 530 92 475C129 530 145 609 174 690Z"/><path d="M1340 703C1380 581 1405 527 1430 490C1450 558 1470 622 1506 703Z"/><path d="M1503 690C1530 595 1545 551 1571 514L1600 675V735Z"/></g>
+ <!-- house shadow -->
+ <ellipse cx="785" cy="784" rx="593" ry="77" fill="#041321" opacity=".44" filter="url(#shadow)"/>
+ <!-- building lower -->
+ <path d="M243 431L1167 431L1240 476V767H250Z" fill="url(#facade)"/>
+ <path d="M1170 430L1240 476V767L1170 749Z" fill="#607887"/>
+ <!-- under roof ambient -->
+ <rect x="258" y="453" width="903" height="12" fill="#f7daa3" opacity=".68" filter="url(#lights)"/>
+ <!-- lower glazing -->
+ <g stroke="#263a4a" stroke-width="13" fill="url(#glass)">
+  <rect x="295" y="481" width="277" height="261"/><rect x="590" y="481" width="275" height="261"/><rect x="886" y="481" width="280" height="261"/>
+ </g>
+ <g stroke="#162e42" stroke-width="8"><path d="M434 481V742M727 481V742M1026 481V742"/></g>
+ <g opacity=".24" fill="#f5ffff"><path d="M318 489h42l-58 244h-12zM616 490h51l-64 240h-13zM907 490h43l-54 240h-11z"/></g>
+ <!-- silhouettes of furniture -->
+ <g fill="#122a3a" opacity=".65"><rect x="336" y="681" width="181" height="23" rx="10"/><rect x="359" y="659" width="151" height="30" rx="8"/><rect x="674" y="676" width="143" height="24" rx="10"/><rect x="961" y="662" width="120" height="40" rx="8"/></g>
+ <!-- floor trim -->
+ <rect x="239" y="743" width="980" height="21" fill="#dfe8e7"/><rect x="239" y="762" width="980" height="10" fill="#718f97"/>
+ <!-- upper structure -->
+ <path d="M455 255H1123L1175 285V430H459Z" fill="#c4d3d8"/>
+ <path d="M1123 256L1175 286V431L1123 419Z" fill="#617888"/>
+ <rect x="480" y="293" width="615" height="120" fill="url(#glass)" stroke="#273a4c" stroke-width="15"/>
+ <path d="M690 298V411M895 298V411" stroke="#203648" stroke-width="11"/>
+ <g opacity=".2" fill="#e9fafd"><path d="M488 304h42l-30 95h-12zM700 304h43l-31 95h-12z"/></g>
+ <!-- automated blinds on upper right window -->
+ <g stroke="#b7d1d7" stroke-opacity=".80" stroke-width="6"><path d="M906 314H1081M906 334H1081M906 354H1081M906 374H1081"/></g>
+ <path d="M418 253H1135L1194 278L1181 304H423L395 281Z" fill="#edf2f3"/>
+ <path d="M395 281H1194L1181 310H415Z" fill="#7b919d"/>
+ <!-- lower canopy -->
+ <path d="M196 406H1180L1249 437L1229 467H208L175 435Z" fill="#eaf1f1"/>
+ <path d="M175 435L1249 437L1229 463H208Z" fill="#566e7d"/>
+ <path d="M220 448H1209" stroke="#ffe2a3" stroke-width="5" opacity=".8"/>
+ <!-- pv panels -->
+ <g transform="translate(655 202) skewX(-20)">
+  <rect width="365" height="58" rx="4" fill="#132c47" stroke="#75c6d5" stroke-width="4"/>
+  <path d="M90 0V58M181 0V58M273 0V58M0 29H365" stroke="#4a94ad" stroke-width="3"/>
+  <path d="M3 5H360" stroke="#b0eff2" stroke-width="3" opacity=".38"/>
+ </g>
+ <!-- ambient entry lights -->
+ <g><ellipse cx="252" cy="529" rx="66" ry="92" fill="url(#glow)"/><ellipse cx="1158" cy="531" rx="64" ry="91" fill="url(#glow)"/><rect x="248" y="492" width="9" height="30" rx="4" fill="#fff1bd"/><rect x="1154" y="492" width="9" height="30" rx="4" fill="#fff1bd"/></g>
+ <!-- front path -->
+ <path d="M232 781L1180 781L1360 915H170Z" fill="#adc5bc"/><path d="M248 790H1180L1255 835H220Z" fill="#a7babb"/><path d="M204 871H1310" stroke="#e5ede4" stroke-width="8" opacity=".5"/>
+ <!-- pool edge and water -->
+ <path d="M466 804L1174 804L1470 946H293Z" fill="#ecf2ea"/><path d="M490 818L1162 818L1393 926H354Z" fill="url(#pool)"/><path d="M490 818L1162 818L1393 926H354Z" fill="url(#poolLine)"/>
+ <path d="M490 817H1163" stroke="#bbecf5" stroke-width="5" opacity=".8"/>
+ <!-- garden / sprinkler -->
+ <g fill="#1f6662"><path d="M0 794c100-50 175-47 236-13v199H0z"/><path d="M1410 800c82-28 145-10 190 4v176h-173z"/></g>
+ <g stroke="#68bd9d" stroke-width="4" fill="none" stroke-linecap="round"><path d="M110 834c-17-43-7-91 16-111m-16 111c-2-48-33-70-48-72m48 72c16-47 56-58 75-54"/><path d="M1466 838c-21-38-2-92 19-112m-19 112c-1-54-38-68-51-68m51 68c25-53 58-59 75-54"/></g>
+ <g stroke="#6fe0f8" stroke-opacity=".65" fill="none" stroke-width="3" stroke-linecap="round"><path d="M130 824q27-58 70-30M130 824q-9-56-39-38"/><circle cx="130" cy="826" r="5" fill="#a0e7f2"/></g>
+ <!-- camera -->
+ <g transform="translate(234 476)"><rect x="-7" y="-12" width="55" height="23" rx="6" fill="#e3f2f5" stroke="#244053" stroke-width="5"/><circle cx="37" cy="0" r="8" fill="#244158"/><path d="M8 12V28" stroke="#e1eef2" stroke-width="6"/></g>
+ <!-- fine accent highlights -->
+ <path d="M0 944H1600" stroke="#7db8ba" stroke-width="3" opacity=".22"/>
+</svg>
