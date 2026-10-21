@@ -349,3 +349,17 @@
    ohne den vorherigen Abschnitt anzuzeigen (95px Scroll-Padding minus Header). */
 #anwendungsbeispiel.demo-section{scroll-margin-top:-13px}
 @media (max-width:830px){#anwendungsbeispiel.demo-section{scroll-margin-top:-23px}}
+
+/* 4-site navigation and standalone contact page — v6 */
+.contact-section--page{padding-top:61px;min-height:calc(100vh - 82px)}
+.contact-page-heading{margin-bottom:32px}
+.contact-page-heading .page-banner-breadcrumb{margin-bottom:0}
+@media(min-width:831px) and (max-width:930px){
+  .desktop-nav,.header-cta{display:none}
+  .menu-btn{display:flex}
+  .mobile-nav{display:block;position:absolute;left:0;right:0;top:82px;z-index:120;background:#0b2136;padding:9px max(18px,calc((100% - 650px)/2)) 23px;border-top:1px solid rgba(255,255,255,.1);box-shadow:0 20px 30px rgba(0,0,0,.18)}
+  .mobile-nav[hidden]{display:none}
+  .mobile-nav a{display:block;padding:15px 10px;border-bottom:1px solid rgba(255,255,255,.07);font-size:15px;color:#edf7ff;font-weight:650}
+  .mobile-nav .mobile-cta{background:#67d5f9;color:#081929;border-radius:11px;text-align:center;margin-top:14px;padding:14px;border:0}
+}
+@media(max-width:830px){.contact-section--page{padding-top:43px;min-height:auto}.contact-page-heading{margin-bottom:24px}}
